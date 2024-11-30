@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bagh One Restaurant</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .navbar-brand {
+            color: #f6af0a;
+            font-weight: 800;
+        }
+        .navbar-brand:hover {
+            color: #ffbb1d;
+        }
+
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 32px;
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 310px;
+            border-radius: 10px;
+            background-size: cover;
+            background-position: center center;
+
+        }
+
+        .menu-item h5 {
+            text-align: center;
+            font-weight: 700;
+            margin-top: 20px;
+
+        }
+
+        .menu-item p {
+            text-align: center;
+        }
+
+        .menu-item p strong {
+            text-align: center;
+            font-weight: 700;
+            font-size: 30px;
+        }
+
+        .nav-item a:hover {
+            border-bottom: 3px solid;
+        }
+        .testimonial {
+            background-color: #f8f9fa;
+            padding: 60px 0;
+        }
+
+        .testimonial p {
+            font-style: italic;
+            font-size: 20px;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .section-image {
+            width: 100%;
+            height: auto;
+            background-position: center;
+            background-size: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .carousel-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+
+        .carousel-content h1 {
+            font-size: 50px;
+            font-weight: 700;
+        }
+
+        .carousel-content p {
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+      
+
+        .carousel-item {
+            width: 100%;
+            height: 700px;
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .nav-link {
+            font-weight: 800;
+            color: #f6af0a;
+
+        }
+
+        .nav-link:hover {
+            color: #ffbb1d;
+         
+
+        }
+
+        .carousel-content a {
+
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+           
+        }
+
+        
+
+        .carousel-content a:hover {
+            background-color: #0b56a5;
+
+        }
+
+        footer {
+
+            color: #f3f3f3;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #ffffff;
+        }
+
+        footer p {
+            margin: 0;
+            color: #f3f3f3;
+        }
+
+        .social-icon {
+            margin-left: 10px;
+            font-size: 20px;
+        }
+
+        .social-icon i {
+            color: white;
+        }
+
+        .social-icon i:hover {
+            color: #ffcc00;
+        }
+
+        .menu-link:hover {
+            padding-left: 5px;
+        }
+
+        .useful-link:hover {
+            padding-left: 5px;
+        }
+
+        .container-footer h6{
+            color: #ffcc00;
+        }
+        .social-links{
+            color: #ffcc00;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand " href="#">Bagh One Restaurant </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reserve">Reserve</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleIndicators" class="carousel slide position-relative">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./Background-1.jpg" class="d-block w-100" alt="Slide 1">
+                <div class="carousel-content">
+                    <h1>Welcome to Restaurant Bagh One</h1>
+                    <p>Enjoy the best meals, prepared with love!</p>
+                    <a href="#reserve">Book a Table</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./Background-2.jpg" class="d-block w-100" alt="Slide 2">
+                <div class="carousel-content ">
+                    <h1>Welcome to Restaurant Name</h1>
+                    <p>Enjoy the best meals, prepared with love!</p>
+                    <a href="#reserve">Book a Table</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./Background-3.jpg" class="d-block w-100" alt="Slide 3">
+                <div class="carousel-content">
+                    <h1>Welcome to Restaurant Name</h1>
+                    <p>Enjoy the best meals, prepared with love!</p>
+                    <a href="#reserve">Book a Table</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <section id="about" class="container py-5">
+        <h2 class="section-title">About Us</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <p>"Bagh One" is a renowned restaurant offering a unique dining experience with a perfect blend of
+                    traditional and contemporary flavors. Situated in a serene location, it is known for its warm
+                    ambiance, exceptional service, and exquisite menu. From delectable appetizers to flavorful main
+                    courses and indulgent desserts, every dish is crafted with the finest ingredients. Whether you're
+                    here for a casual meal or a special occasion, Bagh One ensures a memorable culinary journey. With a
+                    focus on quality, hospitality, and authenticity, it has become a favorite spot for food lovers
+                    seeking a one-of-a-kind dining experience.Bagh One is a distinguished restaurant known for its
+                    elegant atmosphere and exceptional culinary offerings. Located in a prime area, it serves a wide
+                    array of dishes, combining traditional recipes with modern techniques. The restaurant’s menu is a
+                    perfect mix of regional specialties and international cuisines, each dish prepared with fresh,
+                    high-quality ingredients. Guests can enjoy a warm, welcoming ambiance, whether for a casual meal or
+                    a special celebration. Bagh One prides itself on impeccable service, making every dining experience
+                    special. With its attention to detail and commitment to excellence, Bagh One continues to be a
+                    favorite among food enthusiasts.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="./Restaurant image.jpg" class="section-image" alt="Restaurant Image">
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="container py-5">
+        <h2 class="section-title">Our Menu</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="menu-item">
+                    <img src="./images.jpg" alt="Dish 1">
+                    <h5>Dish 1</h5>
+                    <p>HOSA's latest menu continues its contemporary exploration of South Indian flavours, highlighting
+                        lesser-known dishes and micro-regional cuisines that amplify local and untouched tastes. the
+                        menu
+                        transforms street food
+                        Featuring influences from Pondicherry, Coimbatore, Nellur, Kollam, and Chettinad , the Indian
+                        kitchen and offer some of the finest delicacies , the menu
+                        transforms street food and nostalgic dishes into exciting, memorable creations.</p>
+                    <p><strong>$12.99</strong></p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="menu-item">
+                    <img class="menu-image" src="./download.jpg" alt="Dish 2">
+                    <h5>Dish 2</h5>
+                    <p>The Indian cuisine happens to be one of those that is loved by travellers from all parts of the
+                        world. And when it comes to Indian restaurants in the city of Sofia, there are plenty of really
+                        good ones across the places. Enjoying central locations, these restaurants have menus that go
+                        deep into the Indian kitchen and offer some of the finest delicacies from the Indian cuisine.
+                        Right from the salads to soups to the tandoori dishes to main course and curries. </p>
+                    <p><strong>$15.99</strong></p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="menu-item">
+                    <img src="./images (2).jpg" alt="Dish 3">
+                    <h5>Dish 3</h5>
+                    <p>Mirch offers an inviting and intimate ambience for romantic dining experiences and casual
+                        meetings. Its varied menu accommodates a wide range of dietary choices. It provides an
+                        assortment of exquisite Indian dishes that encapsulate authentic flavours reminiscent the menu
+                        transforms street food of the
+                        streets of India. Mirch offers an economical dining option while delivering a combination of
+                        delicious Indian cuisine and a welcoming atmosphere.</p>
+                    <p><strong>$10.99</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container py-5">
+        <h2 class="section-title">Contact Us</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </section>
+
+    <section id="reserve" class="container py-5">
+        <h2 class="section-title">Reserve a Table</h2>
+        <form>
+            <div class="mb-3">
+                <label for="reserve-name" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="reserve-name" required>
+            </div>
+            <div class="mb-3">
+                <label for="reserve-email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="reserve-email" required>
+            </div>
+            <div class="mb-3">
+                <label for="reserve-date" class="form-label">Date</label>
+                <input type="date" class="form-control" id="reserve-date" required>
+            </div>
+            <div class="mb-3">
+                <label for="reserve-time" class="form-label">Time</label>
+                <input type="time" class="form-control" id="reserve-time" required>
+            </div>
+            <div class="mb-3">
+                <label for="reserve-people" class="form-label">Number of People</label>
+                <input type="number" class="form-control" id="reserve-people" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Reserve Table</button>
+        </form>
+    </section>
+
+    <footer class="text-center text-lg-start text-white" style="background-color:  rgb(50, 48, 48)" id="contact">
+        <section class="d-flex justify-content-between p-4" style="background-color: #3a3636">
+            <div class="social-links ">
+                <span>Get connected with us on social networks:</span>
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-google"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+            </div>
+        </section>
+
+        <section class="container-footer">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold;">Bagh One Restaurant</h6>
+                        <hr style="border-top: 2px solid #f39c12;">
+                        <p>Experience exquisite dining at Bagh One, where traditional flavors meet modern culinary
+                            artistry. Join us for an unforgettable meal!</p>
+                    </div>
+
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold">Our Menu</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto" style="border-top: 2px solid #f39c12;">
+                        <a href="#!" class="text-white menu-link">Appetizers</a><br>
+                        <a href="#!" class="text-white menu-link">Main Courses</a><br>
+                        <a href="#!" class="text-white menu-link">Desserts</a><br>
+                        <a href="#!" class="text-white menu-link">Drinks</a>
+                    </div>
+
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold">Useful Links</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto" style="border-top: 2px solid #f39c12;">
+                        <a href="#!" class="text-white useful-link">About Us</a><br>
+                        <a href="#!" class="text-white useful-link">Reservations</a><br>
+                        <a href="#!" class="text-white useful-link">Careers</a><br>
+                        <a href="#!" class="text-white useful-link">Contact</a>
+                    </div>
+
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold">Contact</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto" style="border-top: 2px solid #f39c12;">
+                        <p><i class="fas fa-home mr-3"></i> 123 BaghOne & Banque, Hathijan, Ahmedabad ;</p>
+                        <p><i class="fas fa-envelope mr-3"></i> contact@BaghOnerestaurant.com</p>
+                        <p><i class="fas fa-phone mr-3"></i> +123 456 7890</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="text-center p-3" style="background-color: #3a3636">
+            © 2024 Copyright:
+            <a class="text-white" href="https://baghone.com/">BaghOnerestaurant.com</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
